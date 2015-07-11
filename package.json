@@ -1,7 +1,8 @@
 {
   "name": "directedgraphjs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "directed graph implementation",
+  "homepage": "https://github.com/swvitaliy/directedgraphjs",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -12,6 +13,13 @@
   "keywords": [
     "graph"
   ],
+  "engines": {
+    "node" : ">=0.10"
+  },
+  "bugs": {
+    "url": "https://github.com/swvitaliy/directedgraphjs/issues",
+    "email": "sw.vitaliy@gmail.com"
+  },
   "author": "swvitaliy",
   "license": "ISC",
   "devDependencies": {
