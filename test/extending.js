@@ -11,12 +11,12 @@ describe('extending', function() {
     should(graph.constructor === Graph).be.ok();
     var va = graph.createVertex('A');
     should(va).be.ok();
-    va.should.have.property('name', 'A');
+    va.should.have.property('id', 'A');
     should(va.constructor === dg.Vertex);
     var vb = graph.createVertex('B');
     var edgeAB = graph.createEdge(va, vb, 'A -> B');
     should(edgeAB).be.ok();
-    edgeAB.should.have.property('name', 'A -> B');
+    edgeAB.should.have.property('id', 'A -> B');
     should(edgeAB.constructor === dg.Edge);
   });
   it('extend', function() {
@@ -39,13 +39,13 @@ describe('extending', function() {
     should(graph.constructor === Graph).be.ok();
     var va = graph.createVertex('A');
     should(va).be.ok();
-    va.should.have.property('name', 'A');
+    va.should.have.property('id', 'A');
     va.should.have.property('extra', 'vertex extra value');
     should(va.constructor === VertexEx);
     var vb = graph.createVertex('B');
     var edgeAB = graph.createEdge(va, vb, 'A -> B');
     should(edgeAB).be.ok();
-    edgeAB.should.have.property('name', 'A -> B');
+    edgeAB.should.have.property('id', 'A -> B');
     edgeAB.should.have.property('extra', 'edge extra value');
     should(edgeAB.constructor === EdgeEx);
   });

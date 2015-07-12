@@ -10,7 +10,6 @@ describe('DirectedEdge', function () {
       new E(null, null, 'second'),
       new E(null, null, 'third')].forEach(function (edge) {
         should(edge).be.ok;
-        edge.should.have.property('name');
         edge.should.have.property('id');
       });
 

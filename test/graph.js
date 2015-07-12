@@ -11,8 +11,7 @@ describe('graph', function() {
   });
   it('@instance of entity', function() {
     should(graph).be.ok();
-    graph.should.have.property('name', 'A');
-    graph.should.have.property('id');
+    graph.should.have.property('id', 'A');
   });
   it('#createVertex', function() {
     should(graph).be.ok();

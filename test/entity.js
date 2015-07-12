@@ -8,8 +8,7 @@ describe('Entity', function () {
   it("@ctor", function () {
     var entity = new Entity('A');
     should(entity).be.ok;
-    entity.should.have.property('name', 'A');
-    entity.should.have.property('id');
+    entity.should.have.property('id', 'A');
   });
 
 });
