@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/swvitaliy/ifjs.git"
+    "url": "git://github.com/swvitaliy/directedgraphjs.git"
   },
   "scripts": {
     "test": "mocha"
