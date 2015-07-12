@@ -1,6 +1,6 @@
 {
   "name": "directedgraphjs",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "directed graph implementation",
   "homepage": "https://github.com/swvitaliy/directedgraphjs",
   "main": "index.js",
