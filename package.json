@@ -4,15 +4,14 @@
   "description": "directed graph implementation",
   "homepage": "https://github.com/swvitaliy/directedgraphjs",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "mocha"
-  },
   "keywords": [
     "graph"
   ],
+  "author": {
+    "name": "swvitaliy",
+    "email": "sw.vitaliy@gmail.com",
+    "url": "https://github.com/swvitaliy"
+  },
   "engines": {
     "node" : ">=0.10"
   },
@@ -20,7 +19,13 @@
     "url": "https://github.com/swvitaliy/directedgraphjs/issues",
     "email": "sw.vitaliy@gmail.com"
   },
-  "author": "swvitaliy",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/swvitaliy/ifjs.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
   "license": "ISC",
   "devDependencies": {
     "mocha": "^2.2.5",
