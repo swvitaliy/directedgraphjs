@@ -1,7 +1,7 @@
 "use strict";
 
 var should =require('should')
-  , Graph = require('../lib/graph');
+  , Graph = require('../lib/graph')();
 
 describe('graph', function() {
 

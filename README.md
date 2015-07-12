@@ -1,7 +1,10 @@
 # Directed Graph Implementation
 
-## API
+## Basic API
 
+    // require
+    var Graph = require('directedgraphjs')();
+    
     // Create graph
     var graph = new Graph('friendship');
 
@@ -42,10 +45,33 @@
     // Get a keys of adjacent edges by vertex
     graph.adj(v1)
      
+     
+## Extending Example
+
+    var dg = require('directedgraphjs');
+    var DirectedVertex = dg.Vertex;
+    var util = rquire('util')
+      , _ = require('lodash'); 
+        
+    function City(name, opt) {
+        DirectedVertex.call(this, name);
+        _.extend(this, {
+            popularity: 0,
+            tourRating: 0,
+            numberOfMonuments: 0,
+            numberOfChurch: 0,
+            numberOfMuseums: 0,
+            numberOfTheaters: 0,
+            // something else
+        }, opt);
+    }
     
+    util.inherits(City, DirectedVertex);
     
-    
-    
+    var Graph = dg(City, dg.Edge);
+    // fill the tourists places ...
+    // ... and find your way by criteria
+
     
     
     
